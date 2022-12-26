@@ -1,0 +1,50 @@
+{
+	"name": "ml5-svelte",
+	"version": "0.2.5",
+	"author": "Radialarray",
+	"description": "A component to use ml5 with or without P5 in svelte.",
+	"keywords": [
+		"ml5",
+		"machine learning",
+		"p5",
+		"svelte"
+	],
+	"homepage": "https://ml5-svelte.vercel.app/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Radialarray/ml5-svelte.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite dev",
+		"preview": "vite preview",
+		"build": "vite build",
+		"build:lib": "svelte-kit sync && svelte-package",
+		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"type": "module",
+	"svelte": "index.js",
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "1.0.0",
+		"@sveltejs/kit": "1.0.1",
+		"@sveltejs/package": "1.0.0-next.5",
+		"@vitejs/plugin-basic-ssl": "^1.0.1",
+		"eslint": "^8.27.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"p5": "^1.5.0",
+		"p5-svelte": "^3.1.2",
+		"prettier": "^2.7.1",
+		"prettier-plugin-svelte": "^2.8.0",
+		"svelte-preprocess": "^4.10.7",
+		"svelte2tsx": "^0.5.20",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0"
+	},
+	"dependencies": {
+		"ml5": "^0.12.2",
+		"svelte": "^3.53.1"
+	}
+}
